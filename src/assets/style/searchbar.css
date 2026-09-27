@@ -1,0 +1,40 @@
+div.topbar {
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+    color: white;
+}
+
+div.topbar div.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+div.topbar div.brand img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 3px solid #e67e22;
+    object-fit: cover;
+}
+
+div.topbar div.brand p {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e67e22;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+div.topbar div.search-field input {
+    height: 32px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    width: 220px;
+}

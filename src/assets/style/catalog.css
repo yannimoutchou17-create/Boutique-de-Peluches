@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   box-sizing: border-box;
+}
+
+.catalog-zone {
+   overflow-y: auto;
+   height: 100vh;
+   background: #f9f7f4;
+}
+
+.items-grid {
+   padding: 10px;
+}
+
+.catalog-zone .item-wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 12px 16px;
+   border-bottom: 1px solid #dce0e4;
+   transition: background 0.2s ease;
+}
+
+.catalog-zone .item-wrapper:nth-child(odd) {
+   background-color: #ffffff;
+}
+
+.catalog-zone .item-wrapper:nth-child(even) {
+   background-color: #f0f4f8;
+}
+
+.catalog-zone .item-wrapper:hover {
+   background-color: #fef3e2;
+}
+
+.item-wrapper .item-info {
+   flex: 1;
+   margin-right: 40px;
+}
+
+.item-info p {
+   font-weight: 700;
+   font-size: 15px;
+   margin: 0 0 4px 0;
+   color: #2c3e50;
+}
+
+.item-info span {
+   font-size: 13px;
+   color: #7f8c8d;
+}
+
+.item-wrapper .item-meta {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   text-align: center;
+}
+
+.item-meta .item-weight {
+   font-size: 12px;
+   color: #95a5a6;
+   font-style: italic;
+}
+
+.item-meta .item-weight::after {
+   content: 'g';
+}
+
+img.item-photo {
+   height: 58px;
+   width: 58px;
+   border-radius: 8px;
+   border: 2px solid #e67e22;
+   object-fit: cover;
+}
+
+.stock-display {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.stock-display p {
+   font-size: 11px;
+   font-weight: 600;
+   color: #7f8c8d;
+   margin: 0;
+   text-transform: uppercase;
+}
+
+.stock-display .stock-count {
+   font-weight: 700;
+   color: #2c3e50;
+   font-size: 16px;
+}
+
+p.item-price {
+   font-weight: 800;
+   font-size: 17px;
+   color: #e67e22;
+   min-width: 48px;
+   text-align: right;
+}
+
+img.add-btn {
+   cursor: pointer;
+   height: 38px;
+   width: 38px;
+   border-radius: 6px;
+   border: 2px solid #2c3e50;
+   object-fit: cover;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+img.add-btn:hover {
+   transform: scale(1.15);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+   border-color: #e67e22;
+}

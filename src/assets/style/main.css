@@ -1,0 +1,7 @@
+div.store-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+    min-height: 100vh;
+    background: #f9f7f4;
+}
